@@ -6,13 +6,14 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:51:02 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/03 13:53:02 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/06 21:12:54 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-void	*ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (s[i])
@@ -23,26 +24,5 @@ void	*ft_strchr(const char *s, int c)
 	}
 	if (s[i] == ((char)c))
 		return ((char *)&s[i]);
-	return (0);
+	return (NULL);
 }
-/*void	*ft_strchr(const char *s, int c)
-{
-	int	i;
-
-	i = 0;
-	while(s[i] != (char)c)
-	{
-		if (s[i] == '\0')
-			return(NULL);
-		i++;
-	}
-	return((char *)&s[i]);
-}
-#include <stdio.h>
-int	main(void)
-{
-	if (ft_strchr("y a t il un u dans cette chaine", 'z') != NULL)
-		printf("oui");
-	else
-		printf("non");
-}*/

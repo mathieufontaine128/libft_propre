@@ -6,13 +6,19 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:47:55 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/03 13:48:26 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/05 23:00:32 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
+
+static int	ft_islower(int c)
+{
+	return (c >= 'a' && c <= 'z');
+}
 
 int	ft_toupper(int c)
 {
-	if (c >= 'a' && c <= 'z')
+	if (ft_islower(c))
 		return (c - 32);
 	return (c);
 }

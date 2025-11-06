@@ -1,14 +1,26 @@
-#ifndef LIBFT_F
-#define LIBFT_F
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/11/05 21:31:23 by mfontain          #+#    #+#             */
+/*   Updated: 2025/11/06 21:34:47 by mfontain         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef LIBFT_H
+#define LIBFT_H
 
 #include <stdlib.h>
 #include <unistd.h>
 
-#ifdef __LP64__
+/*#ifdef __LP64__
 	typedef unsigned long size_t;
 #else
 	typedef unsigned int size_t;
-
+*/
 
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
@@ -21,18 +33,18 @@ void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 size_t	ft_strlcpy(char *dest, const char *src, size_t siz);
-size_t	ft_strlcat(char *dest, const char *src, size_t siz):
+size_t	ft_strlcat(char *dest, const char *src, size_t siz);
 int	ft_toupper(int c);
 int	ft_tolower(int c);
-void	*ft_strchr(const char *s,  int c);
-void	*ft_strrchr(const char *s, int c)
+char	*ft_strchr(const char *s,  int c);
+char	*ft_strrchr(const char *s, int c);
 int	ft_strncmp(char *s1, char *s2, unsigned int n);
 void	*ft_memchr(const void *s, int c, size_t n);
 int	ft_memcmp(const void *s, const void *s2, size_t);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int	ft_atoi(const char *str);
 char	*ft_strdup(const char *src);
-void	*ft_calloc(size_t memb, size_t size);i
+void	*ft_calloc(size_t memb, size_t size);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char  const *s2);
 char	*ft_strtrim(char const *s1, char const *set);

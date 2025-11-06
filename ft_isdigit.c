@@ -6,12 +6,12 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/21 18:07:23 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/04 19:46:20 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/05 23:11:35 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 int	ft_isdigit(int c)
 {
-	return (c >= 0 && c <= 9);
+	return (c >= '0' && c <= '9');
 }

@@ -6,9 +6,10 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 14:05:23 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/03 14:07:35 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/06 23:29:13 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <libft.h>
 
 int	ft_atoi(const char *str)
 {
@@ -35,11 +36,3 @@ int	ft_atoi(const char *str)
 	}
 	return (n * sign);
 }
-/*#include <stdio.h>
-int main()
-{
-	printf("%d\n", ft_atoi("   -123"));
-	printf("%d\n", ft_atoi("++5"));
-	printf("%d\n", ft_atoi("  +42abc"));
-	printf("%d\n", ft_atoi("  \t\n-456"));
-}*/

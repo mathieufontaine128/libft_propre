@@ -6,10 +6,10 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 14:01:56 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/03 14:03:41 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/06 22:56:51 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <string.h>
+#include "libft.h"
 
 int	ft_memcmp(const void *s, const void *s2, size_t n)
 {
@@ -23,16 +23,10 @@ int	ft_memcmp(const void *s, const void *s2, size_t n)
 	while (n > 0)
 	{
 		if (*str1 != *str2)
-			return (*str1 - *str2);
+			return ((int)(*str1) - (int)(*str2));
 		str1++;
 		str2++;
 		n--;
 	}
 	return (0);
 }
-/*#include <stdio.h>
-int main ()
-{
-	printf("%d\n", memcmp("aujou", "aujiu", 3));
-        printf("%d\n",ft_memcmp("aujou", "aujiu",3));
-}*/

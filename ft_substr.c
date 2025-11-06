@@ -6,20 +6,10 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 23:36:00 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/03 23:49:15 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/07 00:41:18 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
-
-unsigned int	ft_strlen(char const *str)
-{
-	unsigned int	len;
-
-	len = 0;
-	while (str[len])
-		len++;
-	return (len);
-}
+#include <libft.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -49,9 +39,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr[i] = '\0';
 	return (substr);
 }
-/*#include <stdio.h>
-int	main(void)
-{
-	//char tab[] = "hello les amis"
-	printf("donc : %s",(ft_substr("hello les amis", 3, 7)));
-}*/
