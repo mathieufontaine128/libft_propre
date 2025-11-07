@@ -6,10 +6,10 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 07:59:41 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/06 18:18:49 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/07 10:01:44 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.c"
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

@@ -6,7 +6,7 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 06:43:11 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/03 23:53:06 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/07 11:46:58 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -55,7 +55,7 @@ char	*ft_strcat(char *tab, char *s1, char *s2)
 char	*ft_strjoin(char *s1, char *s2)
 {
 	char	*tab;
-	int	tab_len;
+	int		tab_len;
 
 	tab_len = ft_total_len(s1, s2);
 	if (tab_len == 0)

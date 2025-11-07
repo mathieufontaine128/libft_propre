@@ -6,11 +6,10 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 12:47:11 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/03 13:16:14 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/07 12:11:28 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
-#include <string.h>
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
@@ -78,8 +77,8 @@ char	**free_all(char **tab, int count)
 
 char	**ft_split(char const *s, char c)
 {
-	int	i;
-	int	len;
+	int		i;
+	int		len;
 	char	**final_tab;
 
 	final_tab = malloc((ft_count_words(s, c) + 1) * sizeof(char *));

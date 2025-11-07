@@ -6,7 +6,7 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 14:04:38 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/06 23:16:30 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/07 11:49:15 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <libft.h>
@@ -16,7 +16,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	i;
 	size_t	j;
 
-	if(len == 0 && littlre != '\0')
+	if (len == 0 && littlre != '\0')
 		return (NULL);
 	if (little[0] == '\0')
 		return ((char *)big);
