@@ -6,7 +6,7 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 07:59:41 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/07 17:10:20 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/08 14:12:16 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -17,6 +17,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	char		*to;
 	const char	*from;
 
+	if (!dest && !src)
+		return (NULL);
 	to = dest;
 	from = src;
 	i = 0;
