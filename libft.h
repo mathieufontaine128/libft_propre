@@ -6,7 +6,7 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/05 21:31:23 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/07 16:49:53 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/07 18:25:11 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
-int		ft_strncmp(char *s1, char *s2, unsigned int n);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_memcmp(const void *s, const void *s2, size_t n);
 int		ft_atoi(const char *str);
 void	ft_bzero(void *s, size_t n);

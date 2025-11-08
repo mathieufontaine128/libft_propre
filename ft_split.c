@@ -6,7 +6,7 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 12:47:11 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/07 12:11:28 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/07 20:34:56 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -18,7 +18,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 
 	src_len = 0;
 	while (src[src_len])
-		srcc++;
+		src++;
 	if (size == 0)
 		return (src_len);
 	i = 0;
