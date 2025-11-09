@@ -6,7 +6,7 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 14:57:11 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/08 18:41:24 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/09 11:26:48 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -15,7 +15,6 @@ static int	ft_set_len(long nb)
 {
 	int	i;
 
-	
 	if (nb == 0)
 		return (1);
 	if (nb < 0)
@@ -25,29 +24,30 @@ static int	ft_set_len(long nb)
 	}
 	else
 		i = 0;
-	while(nb > 0)
+	while (nb > 0)
 	{
-			nb /= 10;
-			i++;	
+		nb /= 10;
+		i++;
 	}
 	return (i);
 }
+
 char	*ft_itoa(int n)
 {
 	char	*str;
-	int	len;
 	long	nb;
+	int		len;
 
 	nb = n;
 	len = ft_set_len(n);
 	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (!str)
-		return(NULL);
+		return (NULL);
 	str[len] = '\0';
 	if (nb < 0)
 	{
 		str[0] = '-';
-		nb = -nb; 
+		nb = -nb;
 	}
 	if (nb == 0)
 		str[0] = '0';
@@ -58,10 +58,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-/*#include <stdio.h>
-int main(void)
-{
-	printf("%s",ft_itoa(0));
-	printf("%s",ft_itoa(-2147483648LL));
-	printf("%s",ft_itoa(0));
-}*/

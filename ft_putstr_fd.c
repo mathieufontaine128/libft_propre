@@ -6,7 +6,7 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 23:35:23 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/08 23:45:14 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/09 11:11:59 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -15,4 +15,3 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	write(fd, s, ft_strlen(s));
 }
-
