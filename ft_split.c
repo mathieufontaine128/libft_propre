@@ -6,12 +6,12 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 12:47:11 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/08 14:02:38 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/09 21:29:23 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-int	ft_count_words(const char *s, char c)
+static int	ft_count_words(const char *s, char c)
 {
 	int	i;
 	int	word_count;
@@ -34,7 +34,7 @@ int	ft_count_words(const char *s, char c)
 	return (word_count);
 }
 
-int	ft_word_len(const char *s, char c)
+static	int	ft_word_len(const char *s, char c)
 {
 	int	len;
 
@@ -44,7 +44,7 @@ int	ft_word_len(const char *s, char c)
 	return (len);
 }
 
-char	**free_all(char **tab, int count)
+static char	**free_all(char **tab, int count)
 {
 	int	i;
 

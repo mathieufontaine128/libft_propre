@@ -6,7 +6,7 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 06:43:11 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/09 12:13:42 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/09 21:20:40 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -40,7 +40,7 @@ static char	*ft_strcat(char *tab, char const *s1, char const *s2)
 	return (tab);
 }
 
-char	*ft_strjoin(char const *s1, char const*s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*tab;
 	int		tab_len;

@@ -6,36 +6,36 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 23:36:00 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/07 00:41:18 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/09 21:23:26 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*substr;
+	char	*sub;
 	size_t	i;
 
 	if (!s)
 		return (NULL);
 	if (start >= ft_strlen(s))
 	{
-		substr = malloc(1);
-		if (substr)
-			substr[0] = '\0';
-		return (substr);
+		sub = malloc(1);
+		if (sub)
+			sub[0] = '\0';
+		return (sub);
 	}
 	if (len > ft_strlen(s) - start)
 		len = ft_strlen(s) - start;
-	substr = (char *)malloc(len + 1);
-	if (!substr)
+	sub = (char *)malloc(len + 1);
+	if (!sub)
 		return (NULL);
 	i = 0;
 	while (i < len)
 	{
-		substr[i] = s[start + i];
+		sub[i] = s[start + i];
 		i++;
 	}
-	substr[i] = '\0';
-	return (substr);
+	sub[i] = '\0';
+	return (sub);
 }

@@ -6,11 +6,10 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 23:32:12 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/07 21:27:48 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/09 21:16:19 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
-#include <stdlib.h>
 
 char	*ft_strcpy(char *dest, char const *src)
 {
@@ -26,7 +25,7 @@ char	*ft_strcpy(char *dest, char const *src)
 	return (dest);
 }
 
-char	*ft_strdup(char const*src)
+char	*ft_strdup(char const *src)
 {
 	char	*copy;
 	size_t	len;
