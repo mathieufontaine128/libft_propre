@@ -6,16 +6,16 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/27 07:58:55 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/06 17:30:18 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/09 17:10:29 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-void	ft_bzero(void *b, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*tab;
 
-	tab = (unsigned char *)b;
+	tab = (unsigned char *)s;
 	while (n > 0)
 	{
 		*tab++ = '\0';

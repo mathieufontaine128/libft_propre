@@ -6,10 +6,9 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/25 06:43:11 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/07 20:32:41 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/09 12:13:42 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
 #include "libft.h"
 
 static int	ft_total_len(char const *s1, char const *s2)
@@ -55,17 +54,9 @@ char	*ft_strjoin(char const *s1, char const*s2)
 		tab[0] = '\0';
 		return (tab);
 	}
-	tab = (char *)malloc((tab_len + 1) * sizeof(char *));
+	tab = (char *)malloc((tab_len + 1) * sizeof(char));
 	if (!tab)
 		return (NULL);
 	ft_strcat(tab, s1, s2);
 	return (tab);
 }
-/*#include <stdio.h>
-int	main()
-{
-	char *tabresult = ft_strjoin("hello", "world");
-	printf("%s\n", tabresult);
-	free(tabresult);
-
-}*/

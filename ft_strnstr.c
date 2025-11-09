@@ -6,10 +6,10 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 14:04:38 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/07 18:29:16 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/09 18:42:51 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
