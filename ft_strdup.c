@@ -6,7 +6,7 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 23:32:12 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/09 21:16:19 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/09 22:02:43 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -25,7 +25,7 @@ char	*ft_strcpy(char *dest, char const *src)
 	return (dest);
 }
 
-char	*ft_strdup(char const *src)
+char	*ft_strdup(const char *src)
 {
 	char	*copy;
 	size_t	len;
