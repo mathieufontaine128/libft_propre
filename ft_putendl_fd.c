@@ -6,13 +6,15 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/08 23:47:12 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/09 10:57:17 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/09 23:09:04 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	write (fd, s, ft_strlen(s));
 	write (fd, "\n", 1);
 }
