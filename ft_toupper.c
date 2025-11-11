@@ -6,19 +6,17 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 13:47:55 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/09 17:20:54 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/11 16:08:42 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
-
-static int	ft_islower(int c)
+static int	ft_islowcase(int c)
 {
 	return (c >= 'a' && c <= 'z');
 }
 
 int	ft_toupper(int c)
 {
-	if (ft_islower(c))
+	if (ft_islowcase(c))
 		return (c - 32);
 	return (c);
 }

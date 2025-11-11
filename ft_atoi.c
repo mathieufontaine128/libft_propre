@@ -6,11 +6,9 @@
 /*   By: mfontain <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 14:05:23 by mfontain          #+#    #+#             */
-/*   Updated: 2025/11/09 18:46:36 by mfontain         ###   ########.fr       */
+/*   Updated: 2025/11/11 18:25:19 by mfontain         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
-
 int	ft_atoi(const char *nptr)
 {
 	int	i;
